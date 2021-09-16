@@ -8,8 +8,8 @@ export default class PostStatusFilter extends Component {
         super(props);
         this.buttons = [
             {name: 'all', label: 'Все'},
-            {name: 'all', label: 'Понравилось'},
-        ]
+            {name: 'like', label: 'Понравилось'}
+        ];
     }
     render() {
         const buttons = this.buttons.map(({name, label}) => {
@@ -17,12 +17,11 @@ export default class PostStatusFilter extends Component {
             const active = filter === name;
             const clazz = active ? 'btn-info' : 'btn-outline-secondary'
             return (
-                <button 
-                    key={name} 
-                    type="button" 
-                    className={`btn ${clazz}`}
-                    onClick={() => onFilterSelect(name)}>
-                    {label}</button> 
+                <button type='button'
+				 	className={`btn ${clazz}`}
+					key={name}
+					onClick={() => onFilterSelect(name)}>
+					{label}</button>
             )
         });
         return ( 

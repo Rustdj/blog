@@ -1,8 +1,14 @@
 @import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
+#root {
+	background-color: rgb(29 35 39);
+	
+}
 .app {
+	padding-top: 68px;
 	margin: 0 auto;
 	max-width: 800px;
+	height: 710px;
   }
 
   

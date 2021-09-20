@@ -10,7 +10,7 @@ const Header = styled.div `
 	justify-content: space-between;
     h1 {
         font-size: 26px;
-        color: ${props => props.colored ? 'blue' : 'black'}; // тернатный оператор!
+        color: ${props => props.colored ? '#d3d3e6;' : 'black'}; // тернатный оператор!
         :hover {
             color: orange;
             transition: 0.7s;
@@ -19,7 +19,7 @@ const Header = styled.div `
     }
     h2 {
         font-size: 1.2rem;
-	    color: grey;
+	    color: #e2dcdc;
     }
 `
 
